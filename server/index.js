@@ -13,11 +13,14 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+<<<<<<< HEAD
 // Serve static files from public directory
 app.use(express.static('public'));
 
 // API routes
 
+=======
+>>>>>>> bfb04f52fcab94e7612dc965476f979ab1b8bd41
 const sendEmail = async ({ name, phone, email, intent }) => {
   // Для тестирования - просто логируем данные
   console.log('📧 Email would be sent:', { name, phone, email, intent });
