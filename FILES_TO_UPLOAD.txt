@@ -1,0 +1,90 @@
+# Список файлов для загрузки в GitHub репозиторий
+
+## Основные файлы сайта
+- index.html (главная страница)
+- privacy-policy.html (политика конфиденциальности)
+- manifest.json (PWA манифест)
+- robots.txt (SEO файл)
+- sitemap.xml (карта сайта)
+- .htaccess (конфигурация Apache)
+- .gitignore (файлы для игнорирования Git)
+- README.md (документация проекта)
+
+## Папка assets/ (статические ресурсы)
+- assets/fonts/ (шрифты)
+- assets/icons/ (иконки)
+  - air-conditioner-icon.svg
+  - bad.svg
+  - bath.svg
+  - furniture-icon.svg
+  - garage-icon.svg
+  - garden-icon.svg
+  - movers-icon.svg
+  - pool-icon.svg
+  - security-icon.svg
+- assets/img/ (изображения)
+  - advantages-building-3561c7.png
+  - Angel Cathe.png
+  - hero.jpg
+  - Justin Lee.png
+  - left-quote (1) 2.png
+  - logo.svg
+  - partner/ (логотипы партнеров)
+    - 6L21Bmus4K-removebg-preview (1) 2.png
+    - C1rvyMVdu8-removebg-preview (1) 2.png
+    - jaFnKKhNc2-removebg-preview 2.png
+    - PejBEGRRHr-removebg-preview (1) 1.png
+    - qGcJsIZ3cy-removebg-preview (1) 3.png
+  - properties/ (изображения недвижимости)
+    - prop-1-118913.png
+    - prop-2.png
+    - prop-3-60af99.png
+    - prop-4-78b19b.png
+    - prop-5-6ec2a8.png
+    - prop-6-2fbbea.png
+- assets/video/ (видео файлы)
+
+## Папка css/ (стили)
+- css/modal-contact.css
+- css/normalize.css
+- css/privacy-policy.css
+- css/style.css
+
+## Папка js/ (JavaScript)
+- js/main.js
+- js/modal-contact.js
+- js/modal-success.js
+- js/notify.js
+
+## Папка build/ (минифицированные файлы)
+- build/minify-css.js
+- build/minify-js.js
+- build/style.min.css
+- build/script.min.js
+
+## Папка production/ (production версия)
+- production/index.html
+- production/manifest.json
+- production/.htaccess
+
+## Папка server/ (backend)
+- server/config.js
+- server/index.js
+- server/package.json
+- server/README.md
+
+## Конфигурационные файлы
+- package.json (зависимости Node.js)
+- DEPLOY.md (инструкции по деплою)
+- refactoring-plan.md (план рефакторинга)
+
+## Вспомогательные файлы
+- GIT_SETUP_INSTRUCTIONS.md (инструкции по настройке Git)
+- FILES_TO_UPLOAD.txt (этот файл)
+- init-git.bat (скрипт для инициализации Git)
+- init-git.ps1 (PowerShell скрипт)
+
+## Итого файлов для загрузки: ~50+ файлов
+
+Все файлы готовы к загрузке в GitHub репозиторий.
+После загрузки сайт будет готов к деплою на любой веб-хостинг.
