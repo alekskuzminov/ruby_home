@@ -1,0 +1,21 @@
+{
+  "name": "rubyhome",
+  "version": "1.0.0",
+  "description": "RubyHome - Агентство недвижимости",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build/minify-css.js && node build/minify-js.js",
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "недвижимость",
+    "агентство",
+    "real-estate",
+    "landing-page"
+  ],
+  "author": "RubyHome",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rubyhome.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /build/
+
+# Allow all other content
+Allow: /assets/
+Allow: /css/
+Allow: /js/

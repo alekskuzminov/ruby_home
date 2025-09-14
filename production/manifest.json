@@ -1,0 +1,27 @@
+{
+  "name": "RubyHome - Агентство недвижимости",
+  "short_name": "RubyHome",
+  "description": "Профессиональное агентство недвижимости. Помогаем с покупкой, продажей и арендой недвижимости.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3366FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "lifestyle"],
+  "lang": "ru",
+  "dir": "ltr"
+}

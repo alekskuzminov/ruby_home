@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>RubyHome - Агентство недвижимости | Покупка, продажа, аренда недвижимости</title>
+    <meta name="description" content="RubyHome - профессиональное агентство недвижимости. Помогаем с покупкой, продажей и арендой недвижимости. Индивидуальный подход, полное сопровождение сделок.">
+    <meta name="keywords" content="недвижимость, агентство недвижимости, покупка квартиры, продажа квартиры, аренда недвижимости, RubyHome">
+    <meta name="author" content="RubyHome">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rubyhome.com/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RubyHome - Агентство недвижимости">
+    <meta property="og:description" content="Профессиональное агентство недвижимости. Помогаем с покупкой, продажей и арендой недвижимости.">
+    <meta property="og:url" content="https://rubyhome.com/">
+    <meta property="og:site_name" content="RubyHome">
+    <meta property="og:image" content="https://rubyhome.com/assets/img/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RubyHome - Агентство недвижимости">
+    <meta name="twitter:description" content="Профессиональное агентство недвижимости. Помогаем с покупкой, продажей и арендой недвижимости.">
+    <meta name="twitter:image" content="https://rubyhome.com/assets/img/hero.jpg">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#3366FF">
+    <meta name="msapplication-TileColor" content="#3366FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="RubyHome">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/img/hero.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css?v=15">
+    <link rel="stylesheet" href="css/modal-contact.css">
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "RubyHome",
+        "description": "Профессиональное агентство недвижимости. Помогаем с покупкой, продажей и арендой недвижимости.",
+        "url": "https://rubyhome.com",
+        "logo": "https://rubyhome.com/assets/img/logo.svg",
+        "image": "https://rubyhome.com/assets/img/hero.jpg",
+        "telephone": "+7 (999) 999-99-99",
+        "email": "team@rubyhome.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RU",
+            "addressLocality": "Москва"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "55.7558",
+                "longitude": "37.6176"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Услуги по недвижимости",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Покупка недвижимости",
+                        "description": "Помощь в поиске и покупке недвижимости"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Продажа недвижимости",
+                        "description": "Помощь в продаже недвижимости"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Аренда недвижимости",
+                        "description": "Помощь в поиске и сдаче недвижимости в аренду"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/rubyhome",
+            "https://www.instagram.com/rubyhome",
+            "https://vk.com/rubyhome"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="/" class="header__logo" aria-label="Ruby Home Logo">
+                <img src="assets/img/logo.svg" alt="Ruby Home" width="182" height="45">
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+
+            <!-- Navigation and Button Container -->
+            <div class="header__right">
+                <!-- Navigation -->
+                <nav class="header__nav" aria-label="Основная навигация">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#home" class="header__nav-link header__nav-link--active">Главная</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#properties" class="header__nav-link">Недвижимость</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#advantages" class="header__nav-link">О нас</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#reviews" class="header__nav-link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Contact Button -->
+                <button class="header__button" type="button" aria-label="Связаться с нами">
+                    Связаться с нами
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container">
+                <!-- Left Column - Content -->
+                <div class="hero__content">
+                    <h1 class="hero__title">Найди идеальное место для жизни с семьёй</h1>
+                    <p class="hero__subtitle">Покупка дома — это меняющий жизнь опыт, поэтому ваш риелтор должен быть тем, кто меняет жизнь</p>
+                    <button class="hero__button" type="button" aria-label="Оставить заявку">
+                        Оставить заявку
+                    </button>
+                </div>
+                
+                <!-- Right Column - Image -->
+                <div class="hero__image">
+                    <img src="assets/img/hero.jpg" alt="Идеальный семейный дом" width="600" height="400" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="partners__container">
+                <h2 class="partners__title">Наши партнёры</h2>
+                <div class="partners__list">
+                    <div class="partners__item">
+                        <img src="assets/img/partner/6L21Bmus4K-removebg-preview (1) 2.png" alt="Логотип партнера Biotech Development" width="129" height="70" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/img/partner/C1rvyMVdu8-removebg-preview (1) 2.png" alt="Логотип партнера Express" width="87" height="70" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/img/partner/jaFnKKhNc2-removebg-preview 2.png" alt="Логотип партнера SmileHome" width="202" height="70" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/img/partner/PejBEGRRHr-removebg-preview (1) 1.png" alt="Логотип партнера Connect" width="120" height="60" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/img/partner/qGcJsIZ3cy-removebg-preview (1) 3.png" alt="Логотип партнера HomeBuild" width="125" height="68" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Section -->
+        <section class="properties" id="properties">
+            <div class="properties__container">
+                <h2 class="properties__title">Популярная недвижимость</h2>
+
+                <div class="properties__grid" role="list">
+                    <!-- Card 1 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-1-118913.png" alt="Резиденция Capital Hill" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Резиденция Capital Hill</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price" aria-label="Цена">$5527.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-2.png" alt="Corsair" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Corsair</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price">$4427.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-3-60af99.png" alt="Picket Fence" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Picket Fence</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price">$6727.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-4-78b19b.png" alt="Strive Partners" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Strive Partners</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price">$5527.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-5-6ec2a8.png" alt="Banyon Tree" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Banyon Tree</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price">$4327.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="property-card" role="listitem">
+                        <div class="property-card__image">
+                            <img src="assets/img/properties/prop-6-2fbbea.png" alt="Sequoia" width="362" height="321" loading="lazy">
+                        </div>
+                        <div class="property-card__body">
+                            <h3 class="property-card__title">Sequoia</h3>
+                            <div class="property-card__meta" aria-label="Информация о недвижимости">
+                                <div class="property-card__meta-row">
+                                    <span class="property-card__meta-item property-card__meta-item--location" aria-label="Местоположение: Восточный Лондон">
+                                        <svg class="property-card__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#030A1B" fill-opacity="0.7" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6Zm0 8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+                                        <span class="property-card__location-text">Восточный Лондон</span>
+                                    </span>
+                                </div>
+                                <div class="property-card__meta-row property-card__meta-row--features">
+                                    <span class="property-card__meta-item" aria-label="Спальни: 6">
+                                        <img class="property-card__icon" src="assets/icons/bad.svg" width="16" height="16" alt="Иконка кровати" loading="lazy">
+                                        <span class="property-card__features-text">6</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Ванные: 2">
+                                        <img class="property-card__icon" src="assets/icons/bath.svg" width="16" height="16" alt="Иконка ванной" loading="lazy">
+                                        <span class="property-card__features-text">2</span>
+                                    </span>
+                                    <span class="property-card__meta-item" aria-label="Гаражи: 3">
+                                        <img class="property-card__icon" src="assets/icons/garage-icon.svg" width="16" height="16" alt="Иконка гаража" loading="lazy">
+                                        <span class="property-card__features-text">3</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="property-card__footer">
+                                <span class="property-card__price">$4527.00</span>
+                                <button class="property-card__cta" type="button" aria-label="Оставить заявку">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section (Property Featured) -->
+        <section class="advantages" id="advantages">
+            <div class="advantages__container">
+                <h2 class="advantages__title">Особенности недвижимости</h2>
+                <p class="advantages__subtitle">Недвижимость — это насыщенная сфера. Но с ростом числа покупателей, приобретающих дома через риелторов и брокеров, возможностей предостаточно</p>
+                
+                <div class="advantages__layout">
+                    <!-- Left Column -->
+                    <div class="advantages__column advantages__column--left">
+                        <!-- Security Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/security-icon.svg" alt="Иконка безопасности" width="19" height="23" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">100% Безопасность</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+
+                        <!-- Air Conditioner Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/air-conditioner-icon.svg" alt="Иконка кондиционера" width="22" height="15" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">Бесплатный кондиционер</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+
+                        <!-- Garden Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/garden-icon.svg" alt="Иконка сада" width="20" height="20" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">Цветочный сад</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+                    </div>
+
+                    <!-- Center Column - Image -->
+                    <div class="advantages__image">
+                        <img src="assets/img/advantages-building-3561c7.png" alt="Здание с особенностями недвижимости" width="362" height="548" loading="lazy">
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="advantages__column advantages__column--right">
+                        <!-- Swimming Pool Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/pool-icon.svg" alt="Иконка бассейна" width="28" height="13" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">Бассейн</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+
+                        <!-- Furniture Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/furniture-icon.svg" alt="Иконка мебели" width="24" height="14" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">Аренда мебели</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+
+                        <!-- Movers Card -->
+                        <article class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <img src="assets/icons/movers-icon.svg" alt="Иконка переезда" width="22" height="17" loading="lazy">
+                        </div>
+                            <h3 class="advantage-card__title">Парковка и переезд</h3>
+                            <p class="advantage-card__text">Для многих из нас покупка дома — это мечта, которую не так легко осуществить.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="reviews__container">
+                <div class="reviews__header">
+                    <p class="reviews__label">ОТЗЫВЫ</p>
+                    <h2 class="reviews__title">Что говорят наши ценные клиенты</h2>
+                </div>
+
+                <div class="reviews__content" role="tabpanel" aria-label="Отзывы клиентов">
+                    <!-- Review Card 1 -->
+                    <article class="review-card" role="tabpanel" aria-labelledby="review-1-title">
+                        <div class="review-card__quote-icon">
+                            <img src="assets/img/left-quote (1) 2.png" alt="Кавычки" width="40" height="32" loading="lazy">
+                        </div>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">
+                                <img src="assets/img/Justin Lee.png" alt="Justin Lee" width="74" height="74" loading="lazy">
+                            </div>
+                            <div class="review-card__info">
+                                <h3 class="review-card__name" id="review-1-title">Justin Lee</h3>
+                                <p class="review-card__position">Дизайнер продуктов в Ito</p>
+                            </div>
+                        </div>
+                        <p class="review-card__text">Хороший риелтор не исчезает после подписания договора. Покупка большего дома не обязательно означает трату больше денег. Прошли через это. Продали. Купили. Собрали всё воедино.</p>
+                    </article>
+
+                    <!-- Review Card 2 -->
+                    <article class="review-card" role="tabpanel" aria-labelledby="review-2-title">
+                        <div class="review-card__quote-icon">
+                            <img src="assets/img/left-quote (1) 2.png" alt="Кавычки" width="40" height="32" loading="lazy">
+                        </div>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">
+                                <img src="assets/img/Angel Cathe.png" alt="Angel Cathe" width="74" height="74" loading="lazy">
+                            </div>
+                            <div class="review-card__info">
+                                <h3 class="review-card__name" id="review-2-title">Angel Cathe</h3>
+                                <p class="review-card__position">Дизайнер продуктов в Ito</p>
+                            </div>
+                        </div>
+                        <p class="review-card__text">Хороший риелтор не исчезает после подписания договора. Покупка большего дома не обязательно означает трату больше денег. Прошли через это. Продали. Купили. Собрали всё воедино.</p>
+                    </article>
+                </div>
+
+                <!-- Navigation Indicators -->
+                <div class="reviews__indicators" role="tablist" aria-label="Навигация по отзывам">
+                    <button class="reviews__indicator reviews__indicator--active" type="button" role="tab" aria-selected="true" aria-label="Перейти к слайду 1" tabindex="0"></button>
+                    <button class="reviews__indicator" type="button" role="tab" aria-selected="false" aria-label="Перейти к слайду 2" tabindex="-1"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="cta">
+            <div class="cta__container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Решим любые вопросы с недвижимостью</h2>
+                    <p class="cta__subtitle">Оценка, подбор, документы и сделка под контролем</p>
+                    
+                    <form class="cta__form" aria-label="Подписка на рассылку">
+                        <div class="cta__form-group">
+                            <input 
+                                type="email" 
+                                class="cta__input" 
+                                placeholder="Email для связи" 
+                                aria-label="Email адрес"
+                                required
+                            >
+                            <div class="cta__button-wrapper">
+                                <button type="submit" class="cta__button">Давайте работать</button>
+                                <button type="submit" class="cta__button-hover">Давайте работать</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">© 2025 RubyHome. Все права защищены</p>
+        </div>
+    </footer>
+    
+    <!-- Contact Modal -->
+    <div class="m-overlay" data-modal-overlay hidden>
+        <div class="m-dialog" role="dialog" aria-modal="true" aria-labelledby="m-title" tabindex="-1">
+            <button class="m-close" type="button" aria-label="Закрыть диалог" data-modal-close></button>
+            <h2 class="m-title" id="m-title">Оставьте заявку<br>и мы скоро вам перезвоним</h2>
+            <form class="m-form" novalidate>
+                <div class="m-field">
+                    <label class="m-field-label" for="m-name">Введите имя</label>
+                    <input class="m-input" id="m-name" name="name" type="text" placeholder="Пример: Марк" required minlength="2" autocomplete="name" inputmode="text" aria-describedby="m-name-err">
+                    <p class="m-error" id="m-name-err" role="status" aria-live="polite"></p>
+                </div>
+
+                <div class="m-field">
+                    <label class="m-field-label" for="m-phone">Введите телефон</label>
+                    <input class="m-input" id="m-phone" name="phone" type="tel" placeholder="+7 (999) 999-99-99" required autocomplete="tel" inputmode="tel" aria-describedby="m-phone-err">
+                    <p class="m-error" id="m-phone-err" role="status" aria-live="polite"></p>
+                </div>
+
+                <div class="m-field">
+                    <label class="m-field-label" for="m-email">Введите email адрес</label>
+                    <input class="m-input" id="m-email" name="email" type="email" placeholder="email@example.com" required autocomplete="email" aria-describedby="m-email-err">
+                    <p class="m-error" id="m-email-err" role="status" aria-live="polite"></p>
+                </div>
+
+                <fieldset class="m-segment" aria-label="Я хочу">
+                    <legend class="m-legend">Я хочу</legend>
+                    <div class="m-segment-grid">
+                        <label class="m-segment-item">
+                            <input type="radio" name="intent" value="buy" checked>
+                            <span>Купить</span>
+                        </label>
+                        <label class="m-segment-item">
+                            <input type="radio" name="intent" value="rent">
+                            <span>Снять</span>
+                        </label>
+                        <label class="m-segment-item">
+                            <input type="radio" name="intent" value="sell">
+                            <span>Продать</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="m-agree">
+                    <label class="m-checkbox">
+                        <input type="checkbox" id="m-agree" name="agree" required>
+                        <span class="m-checkbox-box" aria-hidden="true"></span>
+                        <span class="m-checkbox-label">Я согласен с <a class="m-privacy" href="privacy-policy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a></span>
+                    </label>
+                </div>
+
+                <button class="m-submit" type="submit" disabled>Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-overlay" data-success-overlay hidden>
+        <div class="success-dialog" role="dialog" aria-modal="true" aria-labelledby="success-title" tabindex="-1">
+            <button class="success-close" type="button" aria-label="Закрыть диалог" data-success-close></button>
+            <div class="success-content">
+                <div class="success-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" fill="#10B981"/>
+                        <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="success-title" id="success-title">Заявка успешно отправлена!</h2>
+                <p class="success-message">Спасибо за обращение. Мы свяжемся с вами в ближайшее время.</p>
+                <button class="success-button" type="button" data-success-close>Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/notify.js" defer></script>
+    <script src="js/modal-contact.js" defer></script>
+    <script src="js/modal-success.js" defer></script>
+</body>
+</html>
